@@ -37,9 +37,13 @@ img {
     padding-bottom: 1rem;
 }
 
+.intro {
+    background-color: #e2e2e2;
+    text-align: center;
+}
+
 .jupiter {
     margin: 0;
-    text-align: center;
 }
    
 .nav {
@@ -53,7 +57,7 @@ img {
     color: #0074D9;
 }
 
-@media only screen and (min-width: 20em) { /*small-medium*/
+@media only screen and (min-width: 25em) { /*small-medium*/
     
     .nav {
         text-align: center
@@ -65,7 +69,7 @@ img {
     }
 }
 
-@media only screen and (min-width: 40em) { /*large*/
+@media only screen and (min-width: 38em) { /*large*/
     
     .jupiter {
         float: left;
