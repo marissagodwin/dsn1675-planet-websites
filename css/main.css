@@ -25,6 +25,11 @@ body {
     padding: 0;
 }
 
+img { 
+    display: block;
+    width: 100%;
+}
+
 .head {
     width: 100%;
     background-color: #ccc;
