@@ -44,6 +44,7 @@ img {
 
 .jupiter {
     margin: 0;
+    text-align: center;
 }
    
 .nav {
@@ -57,8 +58,20 @@ img {
     color: #0074D9;
 }
 
-@media only screen and (min-width: 25em) { /*small-medium*/
+.foot {
+    background-color: #ccc;
+}
+
+.characteristics {
+    background-color: #e2e2e2;
+}
     
+.facts {
+    background-color: #efefef;
+}
+
+@media only screen and (min-width: 25em) { /*small-medium*/
+
     .nav {
         text-align: center
     }
@@ -71,7 +84,7 @@ img {
 
 @media only screen and (min-width: 38em) { /*large*/
     
-    .jupiter {
+      .jupiter {
         float: left;
     }
     
