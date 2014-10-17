@@ -16,6 +16,27 @@ html {
   text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 60em) { /*large*/
+    
+    html {
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 90em) { /*xlarge*/
+    
+    html {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 120em) { /*xxlarge*/
+    
+    html {
+        font-size: 130%;
+    }
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -49,10 +70,25 @@ img {
    
 .nav {
     padding: 0;
-    list-style-type: none;
+    list-style: disc;
 }
 
 .nav a {
+    display: block;
+    text-decoration:none;
+    color: #0074D9;
+}
+
+.nav li {
+    list-style: disc;
+}
+
+.navtop {
+    padding: 0;
+    list-style: none;
+}
+
+.navtop a {
     display: block;
     text-decoration: none;
     color: #0074D9;
@@ -70,25 +106,88 @@ img {
     background-color: #efefef;
 }
 
-@media only screen and (min-width: 25em) { /*small-medium*/
+.copy {
+        text-align: center;
+    }
 
+.hide {
+        display: none;
+}
+
+@media only screen and (min-width: 25em) { /*small*/
+
+    .hide {
+        display: inline;
+    }
+    
     .nav {
-        text-align: center
+        text-align: center;
     }
     
     .nav li {
         display: inline-block;
         border: 0;
     }
+    
+    .nav a {
+        display: inline;
+    }
+    
+    .nav li:after {
+        content: " ·";
+        color: #0074D9;
+        text-align: center;
+    }
+    
+    .nav li:last-child {
+        content:"";
+    }
+    
+    .navtop {
+        text-align: center
+    }
+    
+    .navtop li {
+        display: inline-block;
+        border: 0;
+    }
+    
 }
 
-@media only screen and (min-width: 38em) { /*large*/
+@media only screen and (min-width: 38em) { /*medium*/
     
-      .jupiter {
+    .jupiter {
         float: left;
     }
     
     .nav {
+        float: right;
+    }
+    
+    .navtop {
+        text-align: center;
+    }
+       
+    .copy {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 60em) { /*large*/
+
+
+    dl {
+        overflow: hidden;
+    }
+
+    dt {
+        float: left;
+        clear: left;
+        width: 10rem;
+    }
+
+    dd {
         float: left;
     }
 }
+    
