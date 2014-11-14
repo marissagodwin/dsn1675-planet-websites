@@ -51,15 +51,19 @@ label {
 }
 
 
+a,
 a:link,
+a:visited {
+  color: #0074D9;
+}
+
+a:hover,
 a:active {
-    /*it is okay to get rid of the focus rectangle for mouse users
-        BUT NEVER FOR KEYBOARD USERS!! */
-    outline: none;
+  outline: none;
 }
 
 a:focus {
-    outline: 3px solid #000;
+  outline: 3px solid #000;
 }
 
 img { 
@@ -129,7 +133,6 @@ img {
     top:0;
 }
 
-
 .head {
     width: 100%;
     background-color: #ccc;
@@ -152,14 +155,24 @@ img {
     list-style: disc;
 }
 
-.nav a {
-    display: block;
-    text-decoration:none;
-    color: #0074D9;
+.nav a,
+.nav a:link,
+.nav a:visited {
+  display: block;
+
+  color: #0074D9;
+  text-decoration: none;
 }
 
-.nav li {
-    list-style: disc;
+.nav a:hover,
+.nav a:focus,
+.nav a:active,
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+  background-color: #0074D9;
+
+  color: #fff;
 }
 
 .navtop {
@@ -211,17 +224,7 @@ img {
     .nav a {
         display: inline;
     }
-    
-    .nav li:after {
-        content: " ·";
-        color: #0074D9;
-        text-align: center;
-    }
-    
-    .nav li:last-child {
-        content:"";
-    }
-    
+   
     .navtop {
         text-align: center
     }
